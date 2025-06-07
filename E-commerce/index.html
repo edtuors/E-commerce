@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>E-commerce de roupas responsivo</title>
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Ed Carlos</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link"><i class="ri-home-line"></i><span>Início</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="#new" class="nav__link"><i class="ri-price-tag-3-line"></i><span>Novo</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="#collection" class="nav__link"><i class="ri-compass-line"></i><span>Coleção</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="#products" class="nav__link"><i class="ri-t-shirt-line"></i><span>Roupas</span></a>
+          </li>
+        </ul>
+      </div>
+      <i class="ri-moon-line change-theme" id="theme-button"></i>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__data">
+          <h1 class="home__title">Nova Coleção <br>De Roupas</h1>
+          <p class="home__description">Nova coleção de roupas <br> as melhores marcas deste ano.</p>
+          <a href="#new" class="button__link">Explorar <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="home__images">
+          <img src="assets/img/home1.png" alt="home image">
+          <img src="assets/img/home2.png" alt="home image">
+        </div>
+      </div>
+    </section>
+
+    <section class="new section" id="new">
+      <h2 class="section__title">Novas Categorias</h2>
+      <div class="new__container container grid">
+        <article class="new__card">
+          <img src="assets/img/new1.png" alt="new image" class="new__img">
+          <a href="#" class="new__link">
+            <div class="new__data">
+              <h2 class="new__title">Capuz & Moletom</h2>
+              <span>Coleção de inverno</span>
+            </div>
+            <i class="ri-arrow-right-line"></i>
+          </a>
+        </article>
+        <article class="new__card">
+          <img src="assets/img/new2.png" alt="new image" class="new__img">
+          <a href="#" class="new__link">
+            <div class="new__data">
+              <h2 class="new__title">Calças & Jaquetas</h2>
+              <span>Coleção de inverno</span>
+            </div>
+            <i class="ri-arrow-right-line"></i>
+          </a>
+        </article>
+        <article class="new__card">
+          <img src="assets/img/new3.png" alt="new image" class="new__img">
+          <a href="#" class="new__link">
+            <div class="new__data">
+              <h2 class="new__title">Casacos & Conjuntos</h2>
+              <span>Coleção de inverno</span>
+            </div>
+            <i class="ri-arrow-right-line"></i>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="collection section" id="collection">
+      <div class="collection__container container">
+        <div class="collection__explore">
+          <div class="collection__data-men">
+            <h2 class="collection__title">Coleção <br>Masculina</h2>
+            <a href="#" class="button__link">Explorar Roupas <i class="ri-arrow-right-line"></i></a>
+          </div>
+          <img src="assets/img/collection1.png" alt="collection image">
+        </div>
+        <div class="collection__explore">
+          <img src="assets/img/collection2.png" alt="collection image">
+          <div class="collection__data-women">
+            <h2 class="collection__title">Coleção <br>Feminina</h2>
+            <a href="#" class="button__link">Explorar Roupas <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products section" id="products">
+      <h2 class="section__title">Melhores Roupas</h2>
+      <div class="products__container container swiper mySwiper">
+        <div class="swiper-wrapper">
+          <article class="products__card swiper-slide">
+            <img src="assets/img/product1.png" alt="product image" class="products__img">
+            <h2 class="products__title">Jaqueta Preta</h2>
+            <span class="products__price">R$174.90</span>
+          </article>
+          <article class="products__card swiper-slide">
+            <img src="assets/img/product2.png" alt="product image" class="products__img">
+            <h2 class="products__title">Shorts Esportivas</h2>
+            <span class="products__price">R$65.00</span>
+          </article>
+          <article class="products__card swiper-slide">
+            <img src="assets/img/product3.png" alt="product image" class="products__img">
+            <h2 class="products__title">Jaqueta Acolchoada</h2>
+            <span class="products__price">R$115.90</span>
+          </article>
+          <article class="products__card swiper-slide">
+            <img src="assets/img/product4.png" alt="product image" class="products__img">
+            <h2 class="products__title">Calça Esportiva</h2>
+            <span class="products__price">R$85.90</span>
+          </article>
+        </div>
+
+        <div class="swiper-button-next">
+            <i class="ri-arrow-right-line"></i>
+        </div>
+        <div class="swiper-button-prev">
+            <i class="ri-arrow-left-line"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand section">
+      <h2 class="section__title">
+        Marcas Que Vendemos
+      </h2>
+
+      <div class="brand__container container grid">
+        <img src="assets/img/logo1.png" alt="logo image" class="brand__img">
+        <img src="assets/img/logo2.png" alt="logo image" class="brand__img">
+        <img src="assets/img/logo3.png" alt="logo image" class="brand__img">
+        <img src="assets/img/logo4.png" alt="logo image" class="brand__img">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section">
+    <div class="footer__container container grid">
+      <div>
+        <a href="#" class="footer__logo">
+          Ed Carlos
+        </a>
+
+        <p class="footer__description">
+          Comprometidos em trazer as <br> 
+          melhores roupas de marcas <br>
+          populares.
+        </p>
+      </div>
+
+      <div class="footer__content">
+        <div>
+          <h3 class="footer__title">
+            Empresa
+          </h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Shop</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Categoria</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Informações</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">
+            Blog
+          </h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Eventos</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Notícias populares</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Notícias recentes</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">
+            Loja
+          </h3>
+
+          <p class="footer__information">
+            Segunda a Sábado<br>
+            9AM ás 10PM
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer__title">
+            Contate-nos
+          </h3>
+
+          <ul class="footer__social">
+            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="" target="_blank" class="footer__social-link">
+              <i class="ri-whatsapp-line"></i>
+            </a>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer__info container">
+      <span class="footer__copy">
+        &#169; Ed Carlos. Todos os direitos reservados
+      </span>
+
+      <a href="#" class="footer__privacy">
+        Termos & Condições
+      </a>
+    </div>
+  </footer>
+
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+  </a>
+
+  <script src="assets/js/scrollreveal.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
